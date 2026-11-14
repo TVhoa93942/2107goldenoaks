@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>2107 Golden Oaks Lane</title>
+<meta name="description" content="2107 Golden Oaks Lane, Monterey, CA. A ground-floor two-bedroom condominium with an expanded sunny patio over the pool and heritage oaks at Golden Oaks. Offered at $539,000.">
+<meta property="og:title" content="2107 Golden Oaks Lane, Monterey">
+<meta property="og:description" content="Ground-floor two-bedroom with an expanded sunny patio over the pool and the oaks. Offered at $539,000.">
+<meta property="og:image" content="https://2107goldenoaks.com/img/living.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23184c1a'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='24' text-anchor='middle' fill='%23fde081'%3E2107%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"RealEstateListing","name":"2107 Golden Oaks Lane, Monterey, CA 93940","url":"https://2107goldenoaks.com/","image":"https://2107goldenoaks.com/img/living.jpg","offers":{"@type":"Offer","price":"539000","priceCurrency":"USD"},"about":{"@type":"Apartment","numberOfBedrooms":2,"numberOfBathroomsTotal":1,"floorSize":{"@type":"QuantitativeValue","value":800,"unitCode":"FTK"},"address":{"@type":"PostalAddress","streetAddress":"2107 Golden Oaks Lane","addressLocality":"Monterey","addressRegion":"CA","postalCode":"93940","addressCountry":"US"}}}
+</script>
+<style>
+/* Layout idea: a cinematic dark-forest film opener, then alternating cream "paper" and deep-green "night" bands; gold is the only accent and marks every action. */
+:root{
+  --night:#0c1a0e; --forest:#184c1a; --leaf:#548235; --gold:#fde081; --gold-deep:#b8922a;
+  --paper:#fbf8ee; --cream:#fff6da; --ink:#17231a; --muted:#5b6a5d; --line:rgba(23,35,26,.14);
+  --display:"Fraunces", Georgia, "Times New Roman", serif;
+  --body:"Open Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --wrap:1180px;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.08;margin:0;text-wrap:balance;letter-spacing:-.01em}
+h2{font-size:clamp(2rem,4.4vw,3.4rem)}
+h2 em{font-style:italic;color:var(--leaf)}
+.night h2 em{color:var(--gold)}
+p{margin:0}
+.wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
+.eyebrow{font-size:.74rem;font-weight:700;letter-spacing:.22em;text-transform:uppercase;color:var(--leaf)}
+.night .eyebrow,.hero .eyebrow{color:var(--gold)}
+section{padding:clamp(64px,9vw,120px) 0}
+.night{background:var(--night);color:#eef2e6}
+.night .muted{color:#a9b8a6}
+.muted{color:var(--muted)}
+:focus-visible{outline:3px solid var(--gold-deep);outline-offset:3px}
+.night :focus-visible,.hero :focus-visible,header :focus-visible{outline-color:var(--gold)}
+
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.95em 1.6em;border-radius:999px;font:600 .92rem var(--body);letter-spacing:.04em;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,border-color .2s}
+.btn:hover{transform:translateY(-2px)}
+#plan3dGo:hover{transform:translateX(-50%) translateY(-2px)}
+.btn-gold{background:var(--gold);color:#1b2a12}
+.btn-gold:hover{background:#ffeaa0}
+.btn-ghost{border-color:rgba(255,255,255,.55);color:#fff}
+.btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+.btn-dark{background:var(--forest);color:#fff}
+.btn-dark:hover{background:#0f3a12}
+.btn-line{border-color:var(--forest);color:var(--forest);background:transparent}
+
+/* header */
+header{position:fixed;inset:0 0 auto 0;z-index:50;transition:background .3s,box-shadow .3s}
+header.solid{background:rgba(12,26,14,.94);backdrop-filter:blur(10px);box-shadow:0 1px 0 rgba(253,224,129,.18)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;height:68px}
+.mark{font-family:var(--display);font-size:1.15rem;color:#fff;text-decoration:none;white-space:nowrap}
+.mark b{color:var(--gold);font-weight:500}
+nav{display:flex;gap:26px;align-items:center}
+nav a{color:#e9efe2;text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+nav a:hover{color:var(--gold)}
+nav .btn{padding:.6em 1.2em;text-transform:none;letter-spacing:.02em;color:#1b2a12}
+@media (max-width:900px){nav a:not(.btn){display:none}}
+@media (max-width:760px){nav .btn{display:none}}
+
+/* hero */
+.hero{position:relative;min-height:min(100svh,900px);display:flex;align-items:flex-end;color:#fff;background:var(--night);padding:0;overflow:hidden}
+.hero video,.hero .poster{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,26,14,.6) 0%,rgba(12,26,14,.15) 26%,rgba(12,26,14,.62) 58%,rgba(12,26,14,.94) 100%)}
+.hero .wrap{position:relative;z-index:2;padding:140px 0 44px}
+.hero h1,.hero .lede{text-shadow:0 2px 24px rgba(0,0,0,.45)}
+.hero h1{font-size:clamp(2.7rem,8.2vw,7rem);font-weight:300;margin:.18em 0 .16em}
+.hero h1 i{font-style:italic;color:var(--gold);font-weight:300}
+.lede{font-size:clamp(1.05rem,1.7vw,1.3rem);max-width:38ch;color:#edf1e6}
+.hero-cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.facts{display:grid;grid-template-columns:repeat(5,auto);justify-content:start;gap:0;margin-top:44px;border-top:1px solid rgba(255,255,255,.25)}
+.facts div{padding:18px 34px 0 0;margin-right:34px;border-right:1px solid rgba(255,255,255,.18)}
+.facts div:last-child{border:0;margin:0;padding-right:0}
+.facts b{display:block;font-family:var(--display);font-weight:400;font-size:clamp(1.5rem,2.6vw,2.2rem);font-variant-numeric:tabular-nums;line-height:1.1}
+.facts span{font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:#cfd9c8}
+.facts .price b{color:var(--gold)}
+@media (max-width:760px){.facts{grid-template-columns:1fr 1fr;gap:6px 0}.facts div{border-right:0;margin:0;padding:14px 12px 0 0}.facts .price{grid-column:1/-1}}
+
+/* residence */
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(32px,6vw,84px);align-items:center}
+@media (max-width:860px){.split{grid-template-columns:1fr}}
+.prose{display:grid;gap:18px;max-width:60ch}
+.prose h2{margin:.25em 0 .15em}
+.frame{position:relative}
+.frame img{border-radius:4px;width:100%;aspect-ratio:4/3;object-fit:cover}
+.frame::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:1.5px solid var(--gold-deep);border-radius:4px;z-index:-1}
+.feats{list-style:none;padding:0;margin:44px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:0;border-top:1px solid var(--line)}
+.feats li{padding:22px 22px 22px 0;border-bottom:1px solid var(--line)}
+.feats b{display:block;font-family:var(--display);font-weight:500;font-size:1.12rem;margin-bottom:4px}
+.feats span{font-size:.9rem;color:var(--muted);line-height:1.5;display:block}
+@media (max-width:900px){.feats{grid-template-columns:1fr 1fr}}
+@media (max-width:480px){.feats{grid-template-columns:1fr}}
+
+/* gallery */
+.head{display:flex;justify-content:space-between;align-items:end;gap:24px;flex-wrap:wrap;margin-bottom:36px}
+.head p{max-width:44ch}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:210px;gap:10px}
+.grid button{all:unset;cursor:zoom-in;position:relative;overflow:hidden;border-radius:3px;display:block;background:#1a2a1c}
+.grid button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.grid img{width:100%;height:100%;object-fit:cover;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
+.grid button:hover img{transform:scale(1.06)}
+.grid .big{grid-column:span 2;grid-row:span 2}
+.grid .wide{grid-column:span 2}
+.grid figcaption,.cap{position:absolute;left:12px;bottom:10px;font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.7)}
+@media (max-width:860px){.grid{grid-template-columns:1fr 1fr;grid-auto-rows:170px}}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(6,12,7,.96);display:none;align-items:center;justify-content:center;padding:56px 16px}
+.lb.open{display:flex}
+.lb img{max-height:100%;max-width:min(1500px,100%);object-fit:contain;border-radius:3px}
+.lb button{position:absolute;background:rgba(255,255,255,.08);color:#fff;border:1px solid rgba(255,255,255,.25);width:48px;height:48px;border-radius:50%;font-size:1.3rem;cursor:pointer}
+.lb button:hover{background:var(--gold);color:#111}
+.lb .x{top:14px;right:16px}.lb .p{left:16px;top:50%}.lb .n{right:16px;top:50%}
+.lb .count{position:absolute;bottom:16px;left:0;right:0;text-align:center;color:#cfd9c8;font-size:.8rem;letter-spacing:.12em;font-variant-numeric:tabular-nums}
+
+/* tour + plan */
+.stage{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#0a140b;box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
+@media (max-width:700px){.stage{aspect-ratio:4/5}}
+.stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+.facade{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;background-size:cover;background-position:center}
+.facade::before{content:"";position:absolute;inset:0;background:rgba(12,26,14,.55)}
+.facade>div{position:relative;display:grid;gap:16px;justify-items:center;padding:20px}
+.play{display:grid;place-items:center;text-decoration:none;width:92px;height:92px;border-radius:50%;background:var(--gold);color:#1b2a12;border:0;cursor:pointer;font:700 .78rem var(--body);letter-spacing:.12em;box-shadow:0 0 0 12px rgba(253,224,129,.2);transition:transform .2s,box-shadow .2s}
+.play:hover{transform:scale(1.06);box-shadow:0 0 0 20px rgba(253,224,129,.16)}
+.facade h3{font-size:clamp(1.4rem,3vw,2.2rem)}
+.under{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px;font-size:.88rem}
+.under a{color:var(--gold);text-underline-offset:4px}
+.paper .under a{color:var(--forest);font-weight:600}
+
+.toggle{display:inline-flex;background:#e9e3cc;border-radius:999px;padding:4px;position:relative}
+.toggle button{all:unset;cursor:pointer;padding:.6em 1.5em;border-radius:999px;font:600 .86rem var(--body);letter-spacing:.06em;color:var(--muted);position:relative;z-index:1;transition:color .25s}
+.toggle button[aria-pressed="true"]{color:#fff}
+.toggle button:focus-visible{outline:3px solid var(--gold-deep)}
+.toggle i{position:absolute;top:4px;bottom:4px;left:4px;width:calc(50% - 4px);background:var(--forest);border-radius:999px;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.toggle.three i{transform:translateX(100%)}
+.plan{background:#fff;border:1px solid var(--line);border-radius:6px;overflow:hidden;position:relative;aspect-ratio:1639/1377;max-width:980px;margin-inline:auto}
+.plan img,.plan iframe{position:absolute;inset:0;width:100%;height:100%;border:0;object-fit:contain}
+.plan [hidden]{display:none!important}
+.dims{display:grid;grid-template-columns:repeat(4,1fr);gap:0;max-width:980px;margin:22px auto 0;border-top:1px solid var(--line)}
+.dims div{padding:14px 12px 0 0}
+.dims b{display:block;font-variant-numeric:tabular-nums;font-size:1.02rem}
+.dims span{font-size:.78rem;color:var(--muted);letter-spacing:.06em;text-transform:uppercase}
+@media (max-width:640px){.dims{grid-template-columns:1fr 1fr}}
+
+/* community */
+.mosaic{display:grid;grid-template-columns:1.3fr 1fr 1fr;grid-template-rows:230px 230px;gap:10px;margin-top:40px}
+.mosaic figure{margin:0;position:relative;overflow:hidden;border-radius:3px}
+.mosaic figure:first-child{grid-row:span 2}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+@media (max-width:760px){.mosaic{grid-template-columns:1fr 1fr;grid-template-rows:none;grid-auto-rows:170px}.mosaic figure:first-child{grid-column:span 2;grid-row:auto}}
+.film{margin-top:10px}
+.film video{width:100%;border-radius:3px;background:#000}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:44px;border-top:1px solid var(--line)}
+.why div{padding:28px 28px 0 0}
+.why b{display:block;font-family:var(--display);font-weight:300;font-size:clamp(2.6rem,5vw,4.2rem);color:var(--forest);line-height:1;font-variant-numeric:tabular-nums}
+.why span{display:block;margin-top:10px;color:var(--muted);font-size:.95rem;max-width:34ch}
+@media (max-width:760px){.why{grid-template-columns:1fr}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,80px);align-items:start}
+@media (max-width:860px){.contact{grid-template-columns:1fr}}
+.agents{display:grid;gap:14px;margin-top:28px}
+.agent{padding:16px 0;border-top:1px solid rgba(255,255,255,.16)}
+.agent b{font-family:var(--display);font-weight:400;font-size:1.3rem;display:block}
+.agent span{font-size:.86rem;color:#a9b8a6}
+.agent a{color:var(--gold);text-decoration:none;font-weight:600}
+form{background:var(--paper);color:var(--ink);padding:clamp(22px,4vw,36px);border-radius:8px;display:grid;gap:14px}
+.choice{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px}
+.choice label{border:1.5px solid var(--line);border-radius:6px;padding:.7em .5em;text-align:center;font-size:.82rem;font-weight:600;cursor:pointer;line-height:1.3}
+.choice input{position:absolute;opacity:0}
+.choice input:checked+label{background:var(--forest);border-color:var(--forest);color:#fff}
+.choice input:focus-visible+label{outline:3px solid var(--gold-deep);outline-offset:2px}
+@media (max-width:480px){.choice{grid-template-columns:1fr}}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:480px){.row{grid-template-columns:1fr}}
+.field{display:grid;gap:5px}
+.field label{font-size:.72rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+input[type=text],input[type=email],input[type=tel],textarea{font:inherit;font-size:1rem;padding:.75em .9em;border:1.5px solid var(--line);border-radius:6px;background:#fff;color:var(--ink);width:100%}
+input:focus,textarea:focus{outline:0;border-color:var(--forest);box-shadow:0 0 0 3px rgba(84,130,53,.25)}
+form .btn{justify-content:center;width:100%}
+.note{font-size:.8rem;color:var(--muted);line-height:1.5}
+.msg{padding:.9em 1em;border-radius:6px;font-size:.92rem;display:none}
+.msg.ok{display:block;background:#e4f0d9;color:#1f4a12}
+.msg.warn{display:block;background:#fff1c4;color:#5c4500}
+
+footer{background:#081209;color:#93a391;font-size:.8rem;line-height:1.7;padding:44px 0 96px}
+footer .wrap{display:grid;gap:14px}
+footer b{color:#e9efe2;font-weight:600}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:40;display:none;gap:8px;padding:10px 14px calc(10px + env(safe-area-inset-bottom));background:rgba(12,26,14,.96);border-top:1px solid rgba(253,224,129,.25)}
+.sticky .btn{flex:1;justify-content:center;padding:.8em .6em;font-size:.84rem}
+@media (max-width:760px){.sticky{display:flex}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap bar">
+    <a class="mark" href="#top"><b>2107</b> Golden Oaks Lane</a>
+    <nav aria-label="Sections">
+      <a href="#residence">Residence</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#tour">3D tour</a>
+      <a href="#plan">Floor plan</a>
+      <a href="#community">Golden Oaks</a>
+      <a class="btn btn-gold" href="#contact">Schedule a showing</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <img class="poster" src="img/hero-poster.jpg" alt="">
+  <video autoplay muted loop playsinline preload="metadata" poster="img/hero-poster.jpg" aria-label="Aerial film of the Golden Oaks community">
+    <source src="media/hero.mp4" type="video/mp4">
+  </video>
+  <div class="wrap">
+    <p class="eyebrow">Golden Oaks &middot; Monterey, California</p>
+    <h1>2107 Golden <i>Oaks</i> Lane</h1>
+    <p class="lede">A single-level, ground-floor home with an expanded sunny patio set above the pool and the heritage oaks.</p>
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#contact">Schedule a private showing</a>
+      <a class="btn btn-ghost" href="#tour">Walk through in 3D</a>
+    </div>
+    <div class="facts">
+      <div class="price"><b>$539,000</b><span>Offered at</span></div>
+      <div><b>2</b><span>Bedrooms</span></div>
+      <div><b>1</b><span>Bath</span></div>
+      <div><b>&plusmn;800</b><span>Square feet</span></div>
+      <div><b>20&prime; &times; 9&prime;9&Prime;</b><span>Expanded patio</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="residence" class="paper">
+  <div class="wrap">
+    <div class="split">
+      <div class="prose">
+        <p class="eyebrow">The residence</p>
+        <h2>Ground floor, <em>no stairs,</em> and sun on the patio.</h2>
+        <p>Most homes at Golden Oaks look across at a neighbor. This one looks out over the pool, the lawn and the landmark oaks, with no view into another home. It is one of the few in the community with an expanded patio, about twenty feet wide, that catches the sun.</p>
+        <p>Inside, everything is on one level: an open living and dining room with a fireplace, an updated kitchen with stainless appliances, two bedrooms, and a bath with a separate dressing room and walk-in closet. Parking and the laundry are a short walk from the door.</p>
+        <p><a class="btn btn-dark" href="#gallery">See every room</a></p>
+      </div>
+      <div class="frame"><img src="img/living.jpg" alt="Living room with fireplace and sliding doors to the patio" loading="lazy"></div>
+    </div>
+    <ul class="feats">
+      <li><b>Single level</b><span>Ground-floor entry with no interior stairs.</span></li>
+      <li><b>Expanded patio</b><span>20&prime; &times; 9&prime;9&Prime;, runs along the living room and the bedrooms.</span></li>
+      <li><b>Open outlook</b><span>Faces the pool, common lawn and oak trees.</span></li>
+      <li><b>Fireplace</b><span>In the 27-foot kitchen and living area.</span></li>
+      <li><b>Updated kitchen</b><span>Stone-look counters and stainless appliances.</span></li>
+      <li><b>Dressing room</b><span>Separate vanity area plus a walk-in closet.</span></li>
+      <li><b>Included</b><span>Range, refrigerator and dishwasher.</span></li>
+      <li><b>Close by</b><span>Parking and community laundry near the door.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section id="gallery" class="night">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Gallery</p><h2>Room by <em>room.</em></h2></div>
+      <p class="muted">Select any photo to view it full screen. Use the arrow keys to move between photos.</p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </div>
+</section>
+
+<section id="tour" class="night" style="padding-top:0">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Giraffe360 virtual tour</p><h2>Walk through it <em>from anywhere.</em></h2></div>
+      <p class="muted">A full 360&deg; walkthrough of every room. Drag to look around, select a marker to move.</p>
+    </div>
+    <div class="stage" id="tourStage">
+      <div class="facade" style="background-image:url(img/kitchen-dining.jpg)">
+        <div>
+          <a class="play" id="tourPlay" href="https://tour.giraffe360.com/ee6f2360bb324ba2b6e3f24dcafe0441/?v=NjE5NUc2LTM4LTEzLC0zLDI0Ng" target="_blank" rel="noopener" aria-label="Start the 3D tour">START</a>
+          <h3>Step inside 2107</h3>
+        </div>
+      </div>
+    </div>
+    <div class="under"><span class="muted">Tour by Giraffe360</span><a href="https://tour.giraffe360.com/ee6f2360bb324ba2b6e3f24dcafe0441/?v=NjE5NUc2LTM4LTEzLC0zLDI0Ng" target="_blank" rel="noopener">Open the tour in a new tab &rarr;</a></div>
+  </div>
+</section>
+
+<section id="plan" class="paper">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Floor plan</p><h2>How it <em>lays out.</em></h2></div>
+      <div class="toggle three" id="toggle" role="group" aria-label="Floor plan view">
+        <i aria-hidden="true"></i>
+        <button type="button" id="b2d" aria-pressed="false">2D plan</button>
+        <button type="button" id="b3d" aria-pressed="true">3D plan</button>
+      </div>
+    </div>
+    <div class="plan">
+      <img id="plan2d" src="img/floorplan-2d.png" alt="2D floor plan: kitchen and living area 12 feet 1 by 27 feet 4, bedrooms 10 feet 6 by 12 feet 6 and 8 feet 11 by 10 feet 1, expanded patio 20 feet by 9 feet 9" loading="lazy">
+      <iframe id="plan3d" title="Interactive 3D floor plan" hidden allowfullscreen></iframe>
+      <div id="plan3dStill" hidden style="position:absolute;inset:0;background:#fff"><img src="img/floorplan-3d.jpg" alt="3D floor plan of 2107 Golden Oaks Lane showing the living area, two bedrooms and the expanded patio" loading="lazy"><a class="btn btn-dark" id="plan3dGo" href="https://my.giraffe360.com/3dflp/t8bc521" target="_blank" rel="noopener" style="position:absolute;left:50%;bottom:18px;transform:translateX(-50%);white-space:nowrap">Spin it in interactive 3D</a></div>
+    </div>
+    <div class="dims">
+      <div><b>12&prime;1&Prime; &times; 27&prime;4&Prime;</b><span>Kitchen / living</span></div>
+      <div><b>10&prime;6&Prime; &times; 12&prime;6&Prime;</b><span>Bedroom one</span></div>
+      <div><b>8&prime;11&Prime; &times; 10&prime;1&Prime;</b><span>Bedroom two</span></div>
+      <div><b>20&prime;0&Prime; &times; 9&prime;9&Prime;</b><span>Expanded patio</span></div>
+    </div>
+    <div class="under" style="max-width:980px;margin-inline:auto"><span class="muted">Square footage is an estimate. Buyer to verify all measurements.</span><a href="https://my.giraffe360.com/3dflp/t8bc521" target="_blank" rel="noopener">Open the 3D plan in a new tab &rarr;</a></div>
+  </div>
+</section>
+
+<section id="community" class="night">
+  <div class="wrap">
+    <div class="split">
+      <div class="prose">
+        <p class="eyebrow">The community</p>
+        <h2>Golden Oaks, <em>under the canopy.</em></h2>
+        <p class="muted">Golden Oaks is a condominium community at 30 Monte Vista Drive, built around a central pool, a clubhouse and a grove of mature coast live oaks. Paths wind between the buildings under the trees, and 2107 looks out on the heart of it.</p>
+        <p><a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=30+Monte+Vista+Drive+Monterey+CA+93940" target="_blank" rel="noopener">See it on the map</a></p>
+      </div>
+      <div class="film">
+        <video controls preload="none" poster="img/pool-aerial.jpg">
+          <source src="media/golden-oaks-film.mp4" type="video/mp4">
+        </video>
+        <p class="muted" style="font-size:.84rem;margin-top:10px">The Golden Oaks aerial film, 1 minute.</p>
+      </div>
+    </div>
+    <div class="mosaic">
+      <figure><img src="img/oaks.jpg" alt="Lawn and benches under the oak trees at Golden Oaks" loading="lazy"><span class="cap">The oak grove</span></figure>
+      <figure><img src="img/pool-sm.jpg" alt="Community pool" loading="lazy"><span class="cap">Pool</span></figure>
+      <figure><img src="img/clubhouse-sm.jpg" alt="Clubhouse patio" loading="lazy"><span class="cap">Clubhouse</span></figure>
+      <figure><img src="img/entrance-sm.jpg" alt="Golden Oaks Condominiums entrance sign" loading="lazy"><span class="cap">Entrance</span></figure>
+      <figure><img src="img/exterior2-sm.jpg" alt="Building exterior and landscaped walk" loading="lazy"><span class="cap">The approach</span></figure>
+    </div>
+  </div>
+</section>
+
+
+<section id="why" class="paper">
+  <div class="wrap">
+    <p class="eyebrow">Represented by Phillips Real Estate</p>
+    <h2 style="max-width:24ch;margin-top:.25em">Nobody knows this condo, or the Golden Oaks development, <em>better</em> than Phillips Real Estate.</h2>
+    <div class="why">
+      <div><b>4</b><span>times Bill Phillips has sold this condo.</span></div>
+      <div><b>1959</b><span>Phillips Real Estate: condominium and condominium management experts since 1959.</span></div>
+      <div><b>40+</b><span>associations managed today. Bill formerly managed the Golden Oaks association, so we know the documents, budget and rules from the inside.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="night">
+  <div class="wrap contact">
+    <div>
+      <p class="eyebrow">Next step</p>
+      <h2 style="margin-top:.25em">See it in <em>person.</em></h2>
+      <p class="muted" style="margin-top:18px;max-width:44ch">Request a private showing or the full disclosure package. Bill or Andrew will reply personally.</p>
+      <div class="agents">
+        <div class="agent"><b>Bill Phillips</b><span>Broker &middot; DRE #00625289</span><br><a href="tel:+18313728092">(831) 372-8092</a> &nbsp;&middot;&nbsp; <span style="color:#e9efe2">bill@billandred.com</span></div>
+        <div class="agent"><b>Andrew Phillips</b><span>Co-listing agent &middot; DRE #02061112</span><br><a href="tel:+18313728092">(831) 372-8092</a> &nbsp;&middot;&nbsp; <span style="color:#e9efe2">andrew@billandred.com</span></div>
+      </div>
+    </div>
+    <form id="lead" novalidate>
+      <div class="choice" role="radiogroup" aria-label="What would you like?">
+        <input type="radio" name="interest" id="i1" value="Schedule a showing" checked><label for="i1">Schedule a showing</label>
+        <input type="radio" name="interest" id="i2" value="Send disclosures"><label for="i2">Send me the disclosures</label>
+        <input type="radio" name="interest" id="i3" value="Question"><label for="i3">Ask a question</label>
+      </div>
+      <div class="row">
+        <div class="field"><label for="fn">First name</label><input type="text" id="fn" name="first_name" autocomplete="given-name" required></div>
+        <div class="field"><label for="ln">Last name</label><input type="text" id="ln" name="last_name" autocomplete="family-name" required></div>
+      </div>
+      <div class="row">
+        <div class="field"><label for="em">Email</label><input type="email" id="em" name="email" autocomplete="email" required></div>
+        <div class="field"><label for="ph">Mobile phone</label><input type="tel" id="ph" name="phone" autocomplete="tel"></div>
+      </div>
+      <div class="field"><label for="ms">Message (optional)</label><textarea id="ms" name="message" rows="3"></textarea></div>
+      <input type="text" name="company" id="hp" tabindex="-1" autocomplete="off" style="position:absolute;left:-9999px" aria-hidden="true">
+      <button class="btn btn-dark" type="submit" id="send">Send my request</button>
+      <div class="msg" id="msg" role="status"></div>
+      <p class="note">Your details go only to Phillips Real Estate and are used to respond to this request.</p>
+    </form>
+  </div>
+</section>
+
+
+<footer>
+  <div class="wrap">
+    <p><b>Phillips Real Estate</b> &middot; 337 El Dorado Street, Suite 3B, Monterey, CA 93940 &middot; (831) 372-8092 &middot; DRE #00625289<br>Bill Phillips, DRE #00625289 &middot; Andrew Phillips, DRE #02061112</p>
+    <p>2107 Golden Oaks Lane, Monterey, CA 93940 &middot; APN 001-943-005-000. Information is deemed reliable but is not guaranteed. Square footage, dimensions and features are approximate and should be independently verified by the buyer. Community photographs and aerial film show the Golden Oaks common areas. Equal Housing Opportunity.</p>
+  </div>
+</footer>
+
+
+<div class="sticky">
+  <a class="btn btn-gold" href="#contact">Schedule a showing</a>
+  <a class="btn btn-ghost" href="tel:+18313728092">Call (831) 372-8092</a>
+</div>
+
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photo viewer">
+  <button class="x" type="button" aria-label="Close">&times;</button>
+  <button class="p" type="button" aria-label="Previous photo">&larr;</button>
+  <img id="lbimg" alt="">
+  <button class="n" type="button" aria-label="Next photo">&rarr;</button>
+  <div class="count" id="lbcount"></div>
+</div>
+
+<script>
+// ---- Settings -------------------------------------------------------
+var GHL_WEBHOOK = "";   // Go High Level inbound webhook URL goes here
+var TOUR_URL = "https://tour.giraffe360.com/ee6f2360bb324ba2b6e3f24dcafe0441/?v=NjE5NUc2LTM4LTEzLC0zLDI0Ng";
+var PLAN3D_URL = "https://my.giraffe360.com/3dflp/t8bc521";
+var R = "";
+var PHOTOS = [
+  ["living","Living room","big"],["kitchen-dining","Kitchen and dining",""],["kitchen","Kitchen",""],
+  ["dining","Dining","wide"],["primary","Primary bedroom","big"],["living2","Living room",""],
+  ["bath","Bath vanity",""],["bedroom2","Second bedroom","wide"],["kitchen2","Kitchen",""],
+  ["primary2","Primary bedroom",""],["bath2","Bath",""],["closet","Walk-in closet",""],
+  ["exterior","Building exterior","wide"],["exterior2","The approach","wide"]
+];
+// ---------------------------------------------------------------------
+(function(){
+  var hdr=document.querySelector("header");
+  function onScroll(){hdr.classList.toggle("solid",window.scrollY>40)}
+  window.addEventListener("scroll",onScroll,{passive:true});onScroll();
+
+  // gallery + lightbox
+  var grid=document.getElementById("grid"),lb=document.getElementById("lb"),lbimg=document.getElementById("lbimg"),lbc=document.getElementById("lbcount"),cur=0,last=null;
+  PHOTOS.forEach(function(p,i){
+    var b=document.createElement("button");b.type="button";if(p[2])b.className=p[2];
+    b.setAttribute("aria-label","View photo: "+p[1]);
+    b.innerHTML='<img src="'+R+'img/'+p[0]+(p[2]==="big"?'':'-sm')+'.jpg" alt="'+p[1]+'" loading="lazy"><span class="cap">'+p[1]+'</span>';
+    b.addEventListener("click",function(){last=b;show(i)});grid.appendChild(b);
+  });
+  function show(i){cur=(i+PHOTOS.length)%PHOTOS.length;lbimg.src=R+"img/"+PHOTOS[cur][0]+".jpg";lbimg.alt=PHOTOS[cur][1];
+    lbc.textContent=(cur+1)+" / "+PHOTOS.length+"   "+PHOTOS[cur][1].toUpperCase();lb.classList.add("open");document.body.style.overflow="hidden";lb.querySelector(".x").focus()}
+  function hide(){lb.classList.remove("open");document.body.style.overflow="";if(last)last.focus()}
+  lb.querySelector(".x").onclick=hide;lb.querySelector(".p").onclick=function(){show(cur-1)};lb.querySelector(".n").onclick=function(){show(cur+1)};
+  lb.addEventListener("click",function(e){if(e.target===lb)hide()});
+  document.addEventListener("keydown",function(e){if(!lb.classList.contains("open"))return;
+    if(e.key==="Escape")hide();if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)});
+  var sx=null;lb.addEventListener("touchstart",function(e){sx=e.touches[0].clientX},{passive:true});
+  lb.addEventListener("touchend",function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>50)show(cur+(d<0?1:-1));sx=null});
+
+  // tour: load the walkthrough only when asked, so the page stays fast
+  var EMBED=/(^|\.)2107goldenoaks\.com$|github\.io$|^localhost$/.test(location.hostname);
+  document.getElementById("tourPlay").addEventListener("click",function(e){
+    if(!EMBED)return; // outside the live site the link simply opens the tour in a new tab
+    e.preventDefault();
+    var f=document.createElement("iframe");f.src=TOUR_URL;f.title="3D virtual tour of 2107 Golden Oaks Lane";f.allowFullscreen=true;f.allow="fullscreen; xr-spatial-tracking; gyroscope; accelerometer";
+    var s=document.getElementById("tourStage");s.innerHTML="";s.appendChild(f);
+  });
+
+  // floor plan toggle
+  var tg=document.getElementById("toggle"),b2=document.getElementById("b2d"),b3=document.getElementById("b3d"),p2=document.getElementById("plan2d"),p3=document.getElementById("plan3d");
+  function setPlan(three){tg.classList.toggle("three",three);b2.setAttribute("aria-pressed",String(!three));b3.setAttribute("aria-pressed",String(three));
+    still.hidden=!three||live;p3.hidden=!three||!live;p2.hidden=three}
+  var still=document.getElementById("plan3dStill"),live=false;
+  document.getElementById("plan3dGo").addEventListener("click",function(e){
+    if(!EMBED)return;e.preventDefault();p3.src=PLAN3D_URL;live=true;setPlan(true)});
+  setPlan(true);
+  b2.onclick=function(){setPlan(false)};b3.onclick=function(){setPlan(true)};
+
+  // lead form -> Go High Level
+  var form=document.getElementById("lead");
+  if(form){form.addEventListener("submit",function(e){
+    e.preventDefault();var msg=document.getElementById("msg"),btn=document.getElementById("send");
+    var d={};new FormData(form).forEach(function(v,k){d[k]=v});
+    if(d.company)return; // spam trap
+    if(!d.first_name||!d.last_name||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.email||"")){msg.className="msg warn";msg.textContent="Please add your first name, last name and a valid email address.";return}
+    delete d.company;d.property="2107 Golden Oaks Lane";d.source="2107goldenoaks.com";d.tags="2107 Golden Oaks, Website Lead, "+d.interest;d.page=location.href;
+    if(!GHL_WEBHOOK){msg.className="msg warn";msg.textContent="Preview only: this form is not connected to Go High Level yet, so nothing was sent.";return}
+    btn.disabled=true;btn.textContent="Sending";
+    fetch(GHL_WEBHOOK,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)})
+      .then(function(r){if(!r.ok)throw 0;form.reset();msg.className="msg ok";msg.textContent="Thank you. Your request is in, and Bill or Andrew will be in touch shortly."})
+      .catch(function(){msg.className="msg warn";msg.textContent="That did not go through. Please call (831) 372-8092 and we will take care of you."})
+      .then(function(){btn.disabled=false;btn.textContent="Send my request"});
+  })}
+})();
+</script>
+</body>
+</html>
