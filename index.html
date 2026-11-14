@@ -68,7 +68,7 @@ nav{display:flex;gap:26px;align-items:center}
 nav a{color:#e9efe2;text-decoration:none;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
 nav a:hover{color:var(--gold)}
 nav .btn{padding:.6em 1.2em;text-transform:none;letter-spacing:.02em;color:#1b2a12}
-@media (max-width:900px){nav a:not(.btn){display:none}}
+@media (max-width:1080px){nav a:not(.btn){display:none}}
 @media (max-width:760px){nav .btn{display:none}}
 
 /* hero */
@@ -127,6 +127,8 @@ nav .btn{padding:.6em 1.2em;text-transform:none;letter-spacing:.02em;color:#1b2a
 /* tour + plan */
 .stage{position:relative;aspect-ratio:16/9;border-radius:6px;overflow:hidden;background:#0a140b;box-shadow:0 30px 80px -30px rgba(0,0,0,.6)}
 @media (max-width:700px){.stage{aspect-ratio:4/5}}
+.stage.card{aspect-ratio:4/3;max-height:820px;width:100%}
+@media (max-width:700px){.stage.card{aspect-ratio:3/5}}
 .stage iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .facade{position:absolute;inset:0;display:grid;place-items:center;text-align:center;color:#fff;background-size:cover;background-position:center}
 .facade::before{content:"";position:absolute;inset:0;background:rgba(12,26,14,.55)}
@@ -216,6 +218,7 @@ footer b{color:#e9efe2;font-weight:600}
       <a href="#tour">3D tour</a>
       <a href="#plan">Floor plan</a>
       <a href="#community">Golden Oaks</a>
+      <a href="#neighborhood">Neighborhood</a>
       <a class="btn btn-gold" href="#contact">Schedule a showing</a>
     </nav>
   </div>
@@ -254,7 +257,7 @@ footer b{color:#e9efe2;font-weight:600}
         <p>Inside, everything is on one level: an open living and dining room with a fireplace, an updated kitchen with stainless appliances, two bedrooms, and a bath with a separate dressing room and walk-in closet. Parking and the laundry are a short walk from the door.</p>
         <p><a class="btn btn-dark" href="#gallery">See every room</a></p>
       </div>
-      <div class="frame"><img src="img/living.jpg" alt="Living room with fireplace and sliding doors to the patio" loading="lazy"></div>
+      <div class="frame"><img src="img/patio.jpg" alt="The expanded patio with seating, looking toward the oaks" loading="lazy"></div>
     </div>
     <ul class="feats">
       <li><b>Single level</b><span>Ground-floor entry with no interior stairs.</span></li>
@@ -264,7 +267,7 @@ footer b{color:#e9efe2;font-weight:600}
       <li><b>Updated kitchen</b><span>Stone-look counters and stainless appliances.</span></li>
       <li><b>Dressing room</b><span>Separate vanity area plus a walk-in closet.</span></li>
       <li><b>Included</b><span>Range, refrigerator and dishwasher.</span></li>
-      <li><b>Close by</b><span>Parking and community laundry near the door.</span></li>
+      <li><b>Parking and laundry</b><span>Underground reserved parking, with community laundry near the door.</span></li>
     </ul>
   </div>
 </section>
@@ -272,7 +275,7 @@ footer b{color:#e9efe2;font-weight:600}
 <section id="gallery" class="night">
   <div class="wrap">
     <div class="head">
-      <div><p class="eyebrow">Gallery</p><h2>Room by <em>room.</em></h2></div>
+      <div><p class="eyebrow">Gallery</p><h2>Outside in, <em>room by room.</em></h2></div>
       <p class="muted">Select any photo to view it full screen. Use the arrow keys to move between photos.</p>
     </div>
     <div class="grid" id="grid"></div>
@@ -340,13 +343,33 @@ footer b{color:#e9efe2;font-weight:600}
     </div>
     <div class="mosaic">
       <figure><img src="img/oaks.jpg" alt="Lawn and benches under the oak trees at Golden Oaks" loading="lazy"><span class="cap">The oak grove</span></figure>
-      <figure><img src="img/pool-sm.jpg" alt="Community pool" loading="lazy"><span class="cap">Pool</span></figure>
+      <figure><img src="img/pool-new-sm.jpg" alt="Community pool" loading="lazy"><span class="cap">Pool</span></figure>
       <figure><img src="img/clubhouse-sm.jpg" alt="Clubhouse patio" loading="lazy"><span class="cap">Clubhouse</span></figure>
       <figure><img src="img/entrance-sm.jpg" alt="Golden Oaks Condominiums entrance sign" loading="lazy"><span class="cap">Entrance</span></figure>
-      <figure><img src="img/exterior2-sm.jpg" alt="Building exterior and landscaped walk" loading="lazy"><span class="cap">The approach</span></figure>
+      <figure><img src="img/picnic-sm.jpg" alt="Mosaic picnic table beside the pool" loading="lazy"><span class="cap">Picnic court</span></figure>
     </div>
   </div>
 </section>
+
+
+<section id="neighborhood" style="background:#f1ecd8">
+  <div class="wrap">
+    <div class="head">
+      <div><p class="eyebrow">Location and neighborhood</p><h2>Around <em>Golden Oaks.</em></h2></div>
+      <p class="muted">An interactive property card: the community from above, the location, media and documents.</p>
+    </div>
+    <div class="stage card" id="cardStage">
+      <div class="facade" style="background-image:url(img/pool-aerial.jpg)">
+        <div>
+          <h3>Golden Oaks property card</h3>
+          <a class="btn btn-gold" id="cardGo" href="https://app.propertycards.ai/recoe7HquXuxg564x" target="_blank" rel="noopener">Open the property card</a>
+        </div>
+      </div>
+    </div>
+    <div class="under"><span class="muted">Property card by PropertyCards</span><a href="https://app.propertycards.ai/recoe7HquXuxg564x" target="_blank" rel="noopener" style="color:var(--forest);font-weight:600">Open the card in a new tab &rarr;</a></div>
+  </div>
+</section>
+
 
 
 <section id="why" class="paper">
@@ -425,11 +448,11 @@ var TOUR_URL = "https://tour.giraffe360.com/ee6f2360bb324ba2b6e3f24dcafe0441/?v=
 var PLAN3D_URL = "https://my.giraffe360.com/3dflp/t8bc521";
 var R = "";
 var PHOTOS = [
-  ["living","Living room","big"],["kitchen-dining","Kitchen and dining",""],["kitchen","Kitchen",""],
-  ["dining","Dining","wide"],["primary","Primary bedroom","big"],["living2","Living room",""],
-  ["bath","Bath vanity",""],["bedroom2","Second bedroom","wide"],["kitchen2","Kitchen",""],
-  ["primary2","Primary bedroom",""],["bath2","Bath",""],["closet","Walk-in closet",""],
-  ["exterior","Building exterior","wide"],["exterior2","The approach","wide"]
+  ["exterior","Building exterior","big"],["patio-view","View from the patio",""],["garden","Garden outlook",""],
+  ["patio","Expanded patio","wide"],["exterior2","The approach","wide"],["pool-new","Community pool","wide"],
+  ["living","Living room","big"],["fireplace","Fireplace",""],["dining-detail","Dining",""],
+  ["dining","Dining","wide"],["kitchen-dining","Kitchen and dining","wide"],["kitchen","Kitchen",""],
+  ["kitchen2","Kitchen",""],["primary","Primary bedroom","wide"],["bedroom2","Second bedroom","wide"]
 ];
 // ---------------------------------------------------------------------
 (function(){
@@ -463,6 +486,10 @@ var PHOTOS = [
     var f=document.createElement("iframe");f.src=TOUR_URL;f.title="3D virtual tour of 2107 Golden Oaks Lane";f.allowFullscreen=true;f.allow="fullscreen; xr-spatial-tracking; gyroscope; accelerometer";
     var s=document.getElementById("tourStage");s.innerHTML="";s.appendChild(f);
   });
+
+  // property card: plays inside the page on the live site
+  var cs=document.getElementById("cardStage");
+  if(cs&&EMBED){var cf=document.createElement("iframe");cf.src="https://app.propertycards.ai/recoe7HquXuxg564x";cf.title="Golden Oaks interactive property card";cf.loading="lazy";cf.allowFullscreen=true;cs.innerHTML="";cs.appendChild(cf)}
 
   // floor plan toggle
   var tg=document.getElementById("toggle"),b2=document.getElementById("b2d"),b3=document.getElementById("b3d"),p2=document.getElementById("plan2d"),p3=document.getElementById("plan3d");
